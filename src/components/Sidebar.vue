@@ -1,12 +1,12 @@
 <template>
   <nav>
   <ul class="mainmenu">
+    <li><router-link to="/">Home</router-link></li>
     <li><router-link to="/about">About</router-link></li>
-    <li><a href="">Work</a>
+    <li><a>Work</a>
       <ul class="submenu">
-        <li><a href="">MobiletechRx</a></li>
-        <li><a href="">Global The Source</a></li>
-        <li><a href="">Wickley Interactive</a></li>
+        <li><router-link to="/mobiletech">MobiletechRx</router-link></li>
+        <li><router-link to="/global">Global</router-link></li>
       </ul>
     </li>
     <li><a href="">Contact</a></li>

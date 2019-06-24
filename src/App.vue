@@ -7,11 +7,11 @@
       <Sidebar />
     </aside>
     <article class="content">
-      <h1>2 column, header and footer</h1>
-      <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
-      <router-view/>
+      <transition name="fade" mode="out-in">
+        <router-view/>
+      </transition>
     </article>
-    <footer class="footer">My footer</footer>
+    <footer class="footer"></footer>
   </div>
 </template>
 
@@ -30,12 +30,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // margin: 40px;
   background-color: #fff;
   color: #444;
   width: 100vw;
@@ -43,10 +41,17 @@ export default {
   margin: 0px;
   display: grid;
   grid-gap: 0px;
+  grid-template-rows: 1fr 10fr 1fr;
+  font-size: 17px;
 }
 
 h1, p {
   margin: 0 0 1em 0;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 
@@ -79,7 +84,7 @@ h1, p {
 
 #app > * {
   border: #444 1px solid;
-  color: #fff;
+  // color: #fff;
   padding: 20px;
   font-size: 150%;
   /* needed for the floated layout*/
@@ -92,5 +97,18 @@ h1, p {
     width: auto;
     margin: 0;
   }
+}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 </style>

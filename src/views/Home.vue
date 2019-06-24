@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    home here
+    <h1>This is a home page</h1>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: 'home'
 }
 </script>
 
 <style scoped lang="scss">
-
+  h1 {
+    color: black;
+  }
 </style>

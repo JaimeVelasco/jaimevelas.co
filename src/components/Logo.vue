@@ -19,7 +19,7 @@
       </li>
       <li class="Words-line">
         <p>Developer</p>
-        <p>mexico</p>
+        <p>&nbsp;</p>
       </li>
     </ul>
   </div>
@@ -33,21 +33,25 @@ export default {
   }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
   $total-lines: 4;
-  $left-offset: 10px;
-  $clip-height: 17px;
-  $line-height: $clip-height - 2px;
+  $left-offset: .6rem;
+  $clip-height: 1rem;
+  $line-height: $clip-height - .05rem;
+
+  .Logo {
+     margin: 0 auto;
+     // position: relative;
+     // right: 20px;
+  }
 
   .Words {
    margin: 0;
-   padding: 7px 0;
-   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-   font-size: 15px;
+   padding: 2px 0;
+   font-size: 7px;
    font-weight: 900;
-   letter-spacing: -2px;
+   letter-spacing:-1px;
    text-transform: uppercase;
    // Sort out nasty text fuzz
    transform: translate3d(0, 0, 0);
@@ -57,7 +61,7 @@ export default {
   }
 
   .Words-line {
-   height: $clip-height;
+   height: 11px;
    overflow: hidden;
    position: relative;
 
@@ -65,38 +69,68 @@ export default {
    &:nth-child(odd) {
      transform: skew(60deg, -30deg) scaleY(.66667);
      background-color: darkGrey;
-     width: 85px;
+     width: 40px;
      color: white;
    }
    &:nth-child(even) {
      transform: skew(0deg, -30deg) scaleY(1.33333);
      background-color: lightGrey;
-     width: 85px;
+     width: 40px;
    }
 
    // Loop over the total lines and apply a left offset
    @for $i from 1 through $total-lines+1 {
      &:nth-child(#{$i}) {
-       left: $left-offset * $i;
+       left: 7px * $i;
      }
    }
   }
   p {
    height: $clip-height;
-   line-height: $line-height;
-   padding: 0 5px;
+   line-height: $clip-height;
+   padding: 0px 2px;
    transition: all .7s ease-in-out;
    transform: translate3d(0, 0, 0);
    vertical-align: top;
    white-space: nowrap;
   }
-  /*
-  ** The hover interaction
-  */
   .Words:hover {
    p {
      transform: translate3d(0, -($clip-height), 0);
    }
+  }
+
+  @media screen and (min-width: 700px) {
+    // .Logo {
+    //    margin: 0;
+    //    right: 0px;
+    // }
+    .Words {
+     padding: 7px;
+     font-size: 15px;
+     letter-spacing:-2px;
+    }
+
+    .Words-line {
+      height: $clip-height;
+
+      &:nth-child(odd) {
+        width: 85px;
+      }
+      &:nth-child(even) {
+        width: 85px;
+      }
+      // Loop over the total lines and apply a left offset
+      @for $i from 1 through $total-lines+1 {
+        &:nth-child(#{$i}) {
+          left: $left-offset * $i;
+        }
+      }
+    }
+
+    p {
+     padding: 0px 5px;
+    }
   }
 
 </style>
