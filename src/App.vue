@@ -3,9 +3,7 @@
     <header class="header">
       <Logo />
     </header>
-    <aside class="sidebar">
-      <Sidebar />
-    </aside>
+    <Navigation class="sidebar"/>
     <article class="content">
       <transition name="fade" mode="out-in">
         <router-view/>
@@ -17,19 +15,19 @@
 
 <script>
 import Logo from '@/components/Logo.vue'
-import Sidebar from '@/components/Sidebar.vue'
+import Navigation from '@/components/Navigation.vue'
 require('@/assets/reset.css')
 
 export default {
   name: 'App',
   components: {
     Logo,
-    Sidebar
+    Navigation
   }
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 #app {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -45,15 +43,12 @@ export default {
   font-size: 17px;
 }
 
-h1, p {
-  margin: 0 0 1em 0;
-}
+
 @media screen and (max-width: 700px) {
   .sidebar {
     display: none;
   }
 }
-
 
 @media screen and (min-width: 700px) {
 
@@ -71,7 +66,7 @@ h1, p {
 #app {
   margin: 0 auto;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 150px 10fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
 }
 
 .header, .footer {

@@ -1,22 +1,22 @@
 <template>
   <nav>
-  <ul class="mainmenu">
-    <li><router-link to="/">Home</router-link></li>
-    <li><router-link to="/about">About</router-link></li>
-    <li><a>Work</a>
-      <ul class="submenu">
-        <li><router-link to="/mobiletech">MobiletechRx</router-link></li>
-        <li><router-link to="/global">Global</router-link></li>
-      </ul>
-    </li>
-    <li><a href="">Contact</a></li>
-  </ul>
-</nav>
+    <ul class="mainmenu">
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+      <li><a>Work</a>
+        <ul class="submenu">
+          <li><router-link to="/mobiletech">MobiletechRx</router-link></li>
+          <li><router-link to="/global">Global</router-link></li>
+        </ul>
+      </li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: 'Sidebar',
+  name: 'Navigation',
   props: {
     msg: String
   }
