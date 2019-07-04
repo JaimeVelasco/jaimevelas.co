@@ -65,7 +65,7 @@ const Index = () => (
         <BigTitle>
           Hi, <br /> I'm Jaime Velasco.
         </BigTitle>
-        <Subtitle>I'm a full stack web developer who enjoys making beautiful and functional web apps</Subtitle>
+        <Subtitle>I'm a full stack web developer who enjoys making beautiful and functional web apps.</Subtitle>
       </Hero>
       <Projects offset={1}>
         <Title>Projects</Title>
@@ -112,6 +112,7 @@ const Index = () => (
         <AboutDesc>
           I'm a full stack web developer who enjoys creating applications that look good and get the job done.  I've succesfully worked 
           remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
+
            
         </AboutDesc>
       </About>
