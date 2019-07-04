@@ -68,7 +68,7 @@ const Index = () => (
         <Subtitle>I'm a full stack web developer who enjoys making beautiful and functional web apps.</Subtitle>
       </Hero>
       <Projects offset={1}>
-        <Title>Projects</Title>
+        <Title>Experience</Title>
         <ProjectsWrapper>
           <ProjectCard
             title="MobiletechRX"
@@ -83,21 +83,27 @@ const Index = () => (
             link="https://spacecadet.io"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
-            Full stack multi-tenant application build with JavaScript, React and Mongo
+            SpaceCadet.io is an online marketplace that connects people looking for space with others in their community 
+            who have vacant space available for rent on a short-term basis. Reserve, pay, and communicate through our portal - all with the click of a button!
+.
           </ProjectCard>
           <ProjectCard
             title="Global the Source"
             link="https://www.globalthesource.com"
             bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
           >
-            Meteor web whatever 
+            Global is a leading master distributor of HVAC/R components to wholesalers throughout the United States,
+            offering superior products and outstanding service. Our line offering continues to broaden, featuring an 
+            array of products including our exclusive line of USA Made Capacitors, relays, transformers, contactors and more.
           </ProjectCard>
           <ProjectCard
             title="Wickley Interactive"
             link="http://www.wickleyworldwide.com/"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            Agency doing a bunch of stuff
+            Wickley Worldwide is a marketing and design firm located in San Antonio, Texas.
+            True artists at heart, we find creative solutions to difficult problems.  
+            Our goal is to help our clients build their brands and their business.
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
@@ -106,13 +112,12 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="Jaime Velasco" />
           <AboutSub>
-            The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-            Emoji into my speech to better express myself. Winky face.
+            I'm a full stack web developer who enjoys creating applications that look good and get the job done.  I've succesfully worked 
+          remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          I'm a full stack web developer who enjoys creating applications that look good and get the job done.  I've succesfully worked 
-          remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
+          
 
            
         </AboutDesc>
@@ -121,8 +126,8 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://github.com/JaimeVelasco/">Github</a> &{' '}
+            Say <a href="mailto:contact@jaimevelas.co">Hi</a> or find me on:{' '}
+            <a href="https://github.com/JaimeVelasco/">Github</a> &{' or '}
             <a href="https://www.instagram.com/jaimex77/">Instagram</a>
           </ContactText>
         </Inner>
