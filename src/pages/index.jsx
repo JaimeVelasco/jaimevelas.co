@@ -75,7 +75,8 @@ const Index = () => (
             link="https://mobiletechrx.com"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
-            Bla bla bla bla
+            Mobile Tech RX is a powerful, intuitive estimating and invoicing software developed specifically for 
+            Mobile Auto Recon Techs. (Paintless Dent Repair (PDR), Paint touch-up and bumper repair, Wheel Repair) 
           </ProjectCard>
           <ProjectCard
             title="Space Cadet"
