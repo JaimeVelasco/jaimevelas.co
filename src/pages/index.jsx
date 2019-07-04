@@ -80,7 +80,7 @@ const Index = () => (
           </ProjectCard>
           <ProjectCard
             title="Space Cadet"
-            link="https://spacecadet.io"
+            link="https://www.spacecadet.io/"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
             SpaceCadet.io is an online marketplace that connects people looking for space with others in their community 
