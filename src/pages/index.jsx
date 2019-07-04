@@ -103,18 +103,16 @@ const Index = () => (
       <About offset={3}>
         <Title>About</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="John Doe" />
+          <Avatar src={avatar} alt="Jaime Velasco" />
           <AboutSub>
             The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
             Emoji into my speech to better express myself. Winky face.
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-          every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-          make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
-          want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
-          right?
+          I'm a full stack web developer who enjoys creating applications that look good and get the job done.  I've succesfully worked 
+          remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
+           
         </AboutDesc>
       </About>
       <Contact offset={4}>
@@ -128,7 +126,7 @@ const Index = () => (
         </Inner>
         <Footer>
           &copy; 2019 by Jaime Velasco.{' '}
-          <a href="https://www.lekoarts.de">LekoArts</a>.
+          Template by  <a href="https://www.lekoarts.de">LekoArts</a>.
         </Footer>
       </Contact>
     </Parallax>
