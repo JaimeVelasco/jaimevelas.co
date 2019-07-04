@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
-  "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "name": "jaime-velasco",
+  "description": "Web Developer",
+  "version": "1.0.0",
+  "author": "Jaime Velasco <contact@jaimevelas.co> (http://jaimevelas.co)",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.4",
@@ -34,9 +34,10 @@
     "portfolio"
   ],
   "scripts": {
-    "dev": "gatsby develop -o",
+    "start": "gatsby develop -o",
     "develop": "gatsby develop",
     "build": "gatsby build",
+    "now-build": "yarn build",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "lint:ci": "yarn lint --format junit -o results/eslint/result.xml"
@@ -53,11 +54,11 @@
     "prettier": "^1.18.2"
   },
   "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "url": "https://github.com/JaimeVelascojaimevelas.co",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
+    "url": "https://github.com/JaimeVelascojaimevelas.co/issues"
   },
-  "homepage": "https://cara.lekoarts.de"
+  "homepage": "http://jaimevelas.co"
 }

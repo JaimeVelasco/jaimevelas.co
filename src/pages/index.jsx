@@ -93,7 +93,7 @@ const Index = () => (
           </ProjectCard>
           <ProjectCard
             title="Wickley Interactive"
-            link="https://www.wicleyworldwide.com"
+            link="http://www.wickleyworldwide.com/"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
             Agency doing a bunch of stuff
@@ -123,7 +123,7 @@ const Index = () => (
           <ContactText>
             Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
             <a href="https://github.com/JaimeVelasco/">Github</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            <a href="https://www.instagram.com/jaimex77/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
