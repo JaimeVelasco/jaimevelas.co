@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "alias": ["www.jaimevelas.co"],
+    "routes": [{
+        "src": "/(.*)",
+        "status": 301,
+        "headers": {
+            "Location": "https://jaimevelas.co/$1"
+        }
+    }]
+}
