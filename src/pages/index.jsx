@@ -118,7 +118,7 @@ const Index = () => (
         </AboutHero>
         <AboutDesc>
           
-
+jajajajaja
            
         </AboutDesc>
       </About>
@@ -128,12 +128,11 @@ const Index = () => (
           <ContactText>
             Say <a href="mailto:contact@jaimevelas.co">Hi</a> or find me on:{' '}
             <a href="https://github.com/JaimeVelasco/">Github</a> &{' or '}
-            <a href="https://www.instagram.com/jaimex77/">Instagram</a>
+            <a href="https://www.linkedin.com/in/jaimevelascog/">LinkedIn</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Jaime Velasco.{' '}
-          Template by  <a href="https://www.lekoarts.de">LekoArts</a>.
+          &copy; 2019 by Jaime Velasco.
         </Footer>
       </Contact>
     </Parallax>
