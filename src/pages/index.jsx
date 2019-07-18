@@ -45,10 +45,6 @@ const AboutSub = styled.span`
   ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
 `
 
-const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
-`
-
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
 `
@@ -101,9 +97,7 @@ const Index = () => (
             link="http://www.wickleyworldwide.com/"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            Wickley Worldwide is a marketing and design firm located in San Antonio, Texas.
-            True artists at heart, we find creative solutions to difficult problems.  
-            Our goal is to help our clients build their brands and their business.
+            Wickley Worldwide is a marketing and design firm located in San Antonio, Texas.   
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
@@ -116,11 +110,6 @@ const Index = () => (
           remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
           </AboutSub>
         </AboutHero>
-        <AboutDesc>
-          
-jajajajaja
-           
-        </AboutDesc>
       </About>
       <Contact offset={4}>
         <Inner>
