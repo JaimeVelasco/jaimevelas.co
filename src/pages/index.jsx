@@ -71,15 +71,15 @@ const Index = () => (
             link="https://mobiletechrx.com"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
-            Mobile Tech RX is a powerful, intuitive estimating and invoicing software developed specifically for 
-            Mobile Auto Recon Techs. (Paintless Dent Repair (PDR), Paint touch-up and bumper repair, Wheel Repair) 
+            Mobile Tech RX is a powerful, intuitive estimating and invoicing software developed specifically for
+            Mobile Auto Recon Techs. (Paintless Dent Repair (PDR), Paint touch-up and bumper repair, Wheel Repair)
           </ProjectCard>
           <ProjectCard
             title="Space Cadet"
             link="https://www.spacecadet.io/"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
-            SpaceCadet.io is an online marketplace that connects people looking for space with others in their community 
+            SpaceCadet.io is an online marketplace that connects people looking for space with others in their community
             who have vacant space available for rent on a short-term basis. Reserve, pay, and communicate through our portal - all with the click of a button!
 .
           </ProjectCard>
@@ -89,7 +89,7 @@ const Index = () => (
             bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
           >
             Global is a leading master distributor of HVAC/R components to wholesalers throughout the United States,
-            offering superior products and outstanding service. Our line offering continues to broaden, featuring an 
+            offering superior products and outstanding service. Our line offering continues to broaden, featuring an
             array of products including our exclusive line of USA Made Capacitors, relays, transformers, contactors and more.
           </ProjectCard>
           <ProjectCard
@@ -97,7 +97,7 @@ const Index = () => (
             link="http://www.wickleyworldwide.com/"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            Wickley Worldwide is a marketing and design firm located in San Antonio, Texas.   
+            Wickley Worldwide is a marketing and design firm located in San Antonio, Texas.
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
@@ -106,8 +106,7 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="Jaime Velasco" />
           <AboutSub>
-            I'm a full stack web developer who enjoys creating applications that look good and get the job done.  I've succesfully worked 
-          remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
+            I m a full-stack web developer who enjoys creating applications that look good and get the job done. I've successfully worked remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
           </AboutSub>
         </AboutHero>
       </About>
@@ -116,7 +115,7 @@ const Index = () => (
           <Title>Get in touch</Title>
           <ContactText>
             Say <a href="mailto:contact@jaimevelas.co">Hi</a> or find me on:{' '}
-            <a href="https://github.com/JaimeVelasco/">Github</a> &{' or '}
+            <a href="https://github.com/JaimeVelasco/">Github</a> &
             <a href="https://www.linkedin.com/in/jaimevelascog/">LinkedIn</a>
           </ContactText>
         </Inner>
