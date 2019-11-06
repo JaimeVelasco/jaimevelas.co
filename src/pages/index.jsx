@@ -106,7 +106,7 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="Jaime Velasco" />
           <AboutSub>
-            I m a full-stack web developer who enjoys creating applications that look good and get the job done. I've successfully worked remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
+            I'm a full-stack web developer who enjoys creating applications that look good and get the job done. I've successfully worked remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
           </AboutSub>
         </AboutHero>
       </About>
@@ -116,7 +116,7 @@ const Index = () => (
           <ContactText>
             Say <a href="mailto:contact@jaimevelas.co">Hi</a> or find me on:{' '}
             <a href="https://github.com/JaimeVelasco/">Github</a> &
-            <a href="https://www.linkedin.com/in/jaimevelascog/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jaimevelascog/"> LinkedIn</a>
           </ContactText>
         </Inner>
         <Footer>
