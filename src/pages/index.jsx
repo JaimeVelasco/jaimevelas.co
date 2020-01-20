@@ -52,6 +52,7 @@ const ContactText = styled.p`
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `
+const thisYear = new Date().getFullYear()
 
 const Index = () => (
   <>
@@ -120,7 +121,7 @@ const Index = () => (
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Jaime Velasco.
+          &copy; {thisYear} by Jaime Velasco.
         </Footer>
       </Contact>
     </Parallax>
