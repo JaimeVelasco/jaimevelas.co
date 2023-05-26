@@ -62,7 +62,7 @@ const Index = () => (
         <BigTitle>
           Hi, <br /> I'm Jaime Velasco.
         </BigTitle>
-        <Subtitle>I'm a full stack web developer who enjoys making beautiful and functional web apps.</Subtitle>
+        <Subtitle>I make apps</Subtitle>
       </Hero>
       <Projects offset={1}>
         <Title>Experience</Title>
@@ -115,7 +115,7 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="Jaime Velasco" />
           <AboutSub>
-            
+
           </AboutSub>
         </AboutHero>
       </About>
