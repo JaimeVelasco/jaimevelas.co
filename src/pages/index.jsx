@@ -68,6 +68,14 @@ const Index = () => (
         <Title>Experience</Title>
         <ProjectsWrapper>
           <ProjectCard
+            title="J2 Interactive"
+            link="https://j2interactive.com"
+            // bg="linear-gradient(to right, #bcc1ba 0%, #46b1c9 100%)"
+            bg="linear-gradient(to right, #aa6373 0%, #392061 100%)"
+            >
+            J2 Interactive is an award-winning software development and IT consulting firm specializing in customized solutions for hospitals, labs, research institutions, and health information exchanges. Our approach to design and development is rooted in a fundamental belief that systems succeed or fail based on how well they serve the people who depend upon them.
+          </ProjectCard>
+          <ProjectCard
             title="MobiletechRX"
             link="https://mobiletechrx.com"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
@@ -107,7 +115,7 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="Jaime Velasco" />
           <AboutSub>
-            I'm a full-stack web developer who enjoys creating applications that look good and get the job done. I've successfully worked remotely for more than 3 years and would love to find a place in a remote-first company with a knowledgeable team.
+            
           </AboutSub>
         </AboutHero>
       </About>
