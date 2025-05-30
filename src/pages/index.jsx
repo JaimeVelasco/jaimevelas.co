@@ -125,7 +125,7 @@ const Index = () => (
           <ContactText>
             Say <a href="mailto:contact@jaimevelas.co">Hi</a> or find me on:{' '}
             <a href="https://github.com/JaimeVelasco/">Github</a> &
-            <a href="https://www.linkedin.com/in/jaimevelascog/"> LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jitos/"> LinkedIn</a>
           </ContactText>
         </Inner>
         <Footer>
