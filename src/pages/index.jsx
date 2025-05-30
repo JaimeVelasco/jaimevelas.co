@@ -115,7 +115,8 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="Jaime Velasco" />
           <AboutSub>
-
+            I'm a Full Stack Developer who enjoys connecting people, data, and everything in between.
+Writing clean code, figuring stuff out, and building friendly, good-looking, and reliable stuff on the web is what I do.
           </AboutSub>
         </AboutHero>
       </About>
