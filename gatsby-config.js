@@ -9,19 +9,12 @@ module.exports = {
   },
   /* Plugins */
   plugins: [
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/images/`,
         name: 'images',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: config.googleAnalyticsID,
       },
     },
     'gatsby-transformer-sharp',
@@ -52,6 +45,5 @@ module.exports = {
     },
     /* Must be placed at the end */
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
   ],
 }

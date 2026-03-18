@@ -1,6 +1,8 @@
-import tw from 'tailwind.macro'
 import { css } from 'styled-components'
 
 export const hidden = css`
-  ${tw`hidden xl:block`};
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
 `

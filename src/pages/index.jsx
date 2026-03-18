@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import tw from 'tailwind.macro'
-import { Parallax } from 'react-spring/renderprops-addons.cjs'
+import { Parallax } from '@react-spring/parallax'
 
 // Components
 import Layout from '../components/Layout'
@@ -20,7 +19,10 @@ import Contact from '../views/Contact'
 import avatar from '../images/avatar.jpg'
 
 const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
@@ -34,24 +36,64 @@ const ProjectsWrapper = styled.div`
 `
 
 const AboutHero = styled.div`
-  ${tw`flex flex-col lg:flex-row items-center mt-8`};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
 `
 
 const Avatar = styled.img`
-  ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
+  border-radius: 9999px;
+  width: 8rem;
+  height: auto;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  @media (min-width: 1200px) {
+    width: 12rem;
+  }
 `
 
 const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  color: #ffffff;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  @media (min-width: 900px) {
+    padding-top: 0;
+    padding-left: 3rem;
+    font-size: 1.875rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 2.25rem;
+  }
 `
 
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  color: #dae4e9;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1.25rem;
+  @media (min-width: 600px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 900px) {
+    font-size: 1.875rem;
+  }
 `
 
 const Footer = styled.footer`
-  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
+  text-align: center;
+  color: #9babb4;
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  @media (min-width: 900px) {
+    font-size: 1.125rem;
+  }
 `
+
 const thisYear = new Date().getFullYear()
 
 const Index = () => (
@@ -70,9 +112,8 @@ const Index = () => (
           <ProjectCard
             title="J2 Interactive"
             link="https://j2interactive.com"
-            // bg="linear-gradient(to right, #bcc1ba 0%, #46b1c9 100%)"
             bg="linear-gradient(to right, #aa6373 0%, #392061 100%)"
-            >
+          >
             J2 Interactive is an award-winning software development and IT consulting firm specializing in customized solutions for hospitals, labs, research institutions, and health information exchanges. Our approach to design and development is rooted in a fundamental belief that systems succeed or fail based on how well they serve the people who depend upon them.
           </ProjectCard>
           <ProjectCard
@@ -90,7 +131,6 @@ const Index = () => (
           >
             SpaceCadet.io is an online marketplace that connects people looking for space with others in their community
             who have vacant space available for rent on a short-term basis. Reserve, pay, and communicate through our portal - all with the click of a button!
-.
           </ProjectCard>
           <ProjectCard
             title="Global the Source"
@@ -116,7 +156,7 @@ const Index = () => (
           <Avatar src={avatar} alt="Jaime Velasco" />
           <AboutSub>
             I'm a Full Stack Developer who enjoys connecting people, data, and everything in between.
-Writing clean code, figuring stuff out, and building friendly, good-looking, and reliable stuff on the web is what I do.
+            Writing clean code, figuring stuff out, and building friendly, good-looking, and reliable stuff on the web is what I do.
           </AboutSub>
         </AboutHero>
       </About>
@@ -138,3 +178,5 @@ Writing clean code, figuring stuff out, and building friendly, good-looking, and
 )
 
 export default Index
+
+export { default as Head } from '../components/SEO'

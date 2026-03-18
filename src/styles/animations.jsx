@@ -1,4 +1,3 @@
-import tw from 'tailwind.macro'
 import styled, { keyframes, css } from 'styled-components'
 
 const rotate = keyframes`
@@ -50,12 +49,20 @@ const upDownWideAnimation = css`
 
 export const UpDown = styled.div`
   animation: ${upDownAnimation};
-  ${tw`pin absolute`};
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 `
 
 export const UpDownWide = styled.div`
   animation: ${upDownWideAnimation};
-  ${tw`pin absolute`};
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 `
 
 export const waveAnimation = length => css`

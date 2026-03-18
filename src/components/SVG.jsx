@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import tw from 'tailwind.macro'
 import { width as twWidth } from '../../tailwind'
 import { hidden } from '../styles/utils'
 
 const Wrapper = styled.svg`
-  ${tw`absolute`};
+  position: absolute;
   stroke: currentColor;
   ${props => props.hiddenMobile && hidden};
   color: ${props => props.stroke};

@@ -1,11 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import tw from 'tailwind.macro'
 
 const Wrapper = styled.a`
   width: 100%;
-  ${tw`shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 text-white`};
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  @media (min-width: 600px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  color: #ffffff;
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
@@ -14,12 +22,28 @@ const Wrapper = styled.a`
 `
 
 const Text = styled.div`
-  ${tw`opacity-75 font-sans text-sm md:text-base`};
+  opacity: 0.75;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.875rem;
+  @media (min-width: 600px) {
+    font-size: 1rem;
+  }
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `
 
 const Title = styled.div`
-  ${tw`text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pt-8`};
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  @media (min-width: 600px) {
+    font-size: 1.875rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 2.25rem;
+  }
+  letter-spacing: 0.05em;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  padding-top: 2rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `
 

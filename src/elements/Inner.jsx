@@ -1,8 +1,14 @@
-import tw from 'tailwind.macro'
 import styled from 'styled-components'
 
 const Inner = styled.div`
-  ${tw`w-full xxl:w-2/3 text-center lg:text-left`};
+  width: 100%;
+  text-align: center;
+  @media (min-width: 900px) {
+    text-align: left;
+  }
+  @media (min-width: 1600px) {
+    width: 66.66667%;
+  }
 `
 
 export default Inner

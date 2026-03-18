@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import tw from 'tailwind.macro'
 import styled from 'styled-components'
 import { Divider } from '../elements/Dividers'
 import Content from '../elements/Content'
@@ -9,12 +8,15 @@ import { colors } from '../../tailwind'
 import SVG from '../components/SVG'
 
 const WaveWrapper = styled.div`
-  ${tw`absolute pin-b w-full`};
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   transform: matrix(1, 0, 0, -1, 0, 0);
 `
 
 const InnerWave = styled.div`
-  ${tw`relative h-full`};
+  position: relative;
+  height: 100%;
   svg {
     width: 100%;
     height: 40vh;
